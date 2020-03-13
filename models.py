@@ -8,7 +8,7 @@ from keras.layers.convolutional import MaxPooling1D
 from keras.layers import Dropout
 from keras.layers.normalization import BatchNormalization
 from keras.optimizers import Adam
-from keras.utils.training_utils import multi_gpu_model
+import keras.backend as K
 import tensorflow as tf
 import keras
 
@@ -165,5 +165,3 @@ def sleepdetector_lstm_cpu(timesteps = 32, vec_len = 640, n_units = 64, n_layers
         model = Model(inputs=[x_in], outputs=[final_x])
     
     return model
-    
-    
