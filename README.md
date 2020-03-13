@@ -27,7 +27,7 @@ y_hat = CRNNeeg.predict(x)
 
 **x** has a shape of (4, n, 3000, 1), where *4* corresponds to the number of channels, *n* corresponds to the number of 30s epochs, and *3000* corresponds to the number of samples of each 30s segment (= time x sampling_frequency = 30s x 100Hz = 3000)
 
-An example is provided in main.py, where CRNNeeg is applied on the PSG recording 'abc-baseline-900001' of the ABC dataset[1][2][3].
+An example is provided in **main.py**, where CRNNeeg is applied on the PSG recording 'abc-baseline-900001' of the ABC dataset[1][2][3].
 
 ## Environment:
 Python 3.6
