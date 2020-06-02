@@ -31,6 +31,12 @@ The output **yhat** is an array of sleep stages, where 4 = Awake, 3 = REM, 2 = N
 
 An example is provided in **main.py**, where CRNNeeg is applied on the PSG recording 'abc-baseline-900001' of the ABC dataset[1][2][3].
 
+### Important Note:
+To ensure optimal operation of the sleep staging algorithm, the polarity of the signals used should be such that eyeblinks result in an **upward deflection** in F3-C3 and F4-C4, as shown in the figure below.
+
+[EEG-Eyeblinks](/images/Eyeblinks%20-%20PSG.jpg)
+
+
 ## Environment:
 Python 3.6
 
