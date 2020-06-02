@@ -3,7 +3,7 @@
 ## Introduction:
 This page contains the necessary code to run CRNNeeg, a deep learning algorithm for automatically sleep staging PSG and long-term scalp EEG recordings. CRNNeeg is composed of a convolutional neural network (CNN) for feature extraction, followed by a recurrent neural network (RNN) that extracts the temporal dependencies of sleep stages.
 
-CRNNeeg is implemented in Python (3.6), running Keras (2.2.3) with Tensorflow (1.12.0) as backend.
+CRNNeeg is implemented in Python (3.6), running Keras (2.2.3) with Tensorflow (1.12.0) as backend. Currently, only the cpu implementation of CRNNeeg is provided.
 
 ## How to use:
 Step 1: Import the class Sleepdetector
@@ -26,6 +26,8 @@ y_hat = CRNNeeg.predict(x)
 **x** is a sequence of consecutive 30s EEG epochs that consists of 4 channels: F3-C3, C3-O1, F4-C4, and C4-O2.
 
 **x** has a shape of (4, n, 3000, 1), where *4* corresponds to the number of channels, *n* corresponds to the number of 30s epochs, and *3000* corresponds to the number of samples of each 30s segment (= time x sampling_frequency = 30s x 100Hz = 3000)
+
+The output **yhat** is an array of sleep stages, where 4 = Awake, 3 = REM, 2 = N1, 1 = N2, and 0 = N3.
 
 An example is provided in **main.py**, where CRNNeeg is applied on the PSG recording 'abc-baseline-900001' of the ABC dataset[1][2][3].
 
