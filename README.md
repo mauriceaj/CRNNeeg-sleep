@@ -33,8 +33,9 @@ An example is provided in **main.py**, where CRNNeeg is applied on the PSG recor
 
 ### Important Note:
 To ensure optimal operation of the sleep staging algorithm, the polarity of the signals used should be such that eyeblinks result in an **upward deflection** in F3-C3 and F4-C4, as shown in the figure below.
-
-[EEG-Eyeblinks](/images/Eyeblinks%20-%20PSG.jpg)
+<p align = 'center' >
+<img align="center" src="/images/Eyeblinks%20-%20PSG.jpg">
+</p>
 
 
 ## Environment:
