@@ -1,7 +1,7 @@
 # CRNNeeg-sleep
 
 ## Introduction:
-This page contains the necessary code to run CRNNeeg, a deep learning algorithm for automatically sleep staging PSG and long-term scalp EEG recordings. CRNNeeg is composed of a convolutional neural network (CNN) for feature extraction, followed by a recurrent neural network (RNN) that extracts the temporal dependencies of sleep stages.
+This page contains the necessary code to run CRNNeeg, a deep learning algorithm for automatically sleep staging PSG and long-term scalp EEG recordings. CRNNeeg is composed of a convolutional neural network (CNN) for feature extraction, followed by a recurrent neural network (RNN) that extracts the temporal dependencies of sleep stages. The methods used to develop this algorithm and the expected performance are presented in https://doi.org/10.1093/sleep/zsaa112.
 
 CRNNeeg is implemented in Python (3.6), running Keras (2.2.3) with Tensorflow (1.12.0) as backend. Currently, only the cpu implementation of CRNNeeg is provided.
 
@@ -44,6 +44,10 @@ Python 3.6
 Tensorflow 1.12.0
 
 Keras 2.2.3
+
+## Citation:
+
+Please cite the following paper https://doi.org/10.1093/sleep/zsaa112 when using this algorithm. 
 
 ## Contact:
 Maurice Abou Jaoude
